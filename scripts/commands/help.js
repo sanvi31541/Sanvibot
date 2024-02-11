@@ -1,19 +1,18 @@
-const axios = require('axios');
-const jimp = require("jimp");
-const fs = require("fs");
 module.exports.config = {
-  name: "help",
-  version: "1.0.2",
-  permission: 0,
-  credits: "RAJA_BABU",
-  description: "beginner's guide",
-  prefix: true,
-  category: "guide",
-  usages: "[Shows Commands]",
-  cooldowns: 5,
-  envConfig: {
-    autoUnsend: true,
-    delayUnsend: 60
+    name: "help",
+    version: "1.0.0",
+    permission: 0,
+    credits: "BADOL-KHAN",
+    prefix: true,
+    description: "",
+    category: "prefix",
+    usages: "",
+    cooldowns: 5,
+    dependencies: 
+	{
+    "request":"",
+    "fs-extra":"",
+    "axios":""
   }
 };
 
