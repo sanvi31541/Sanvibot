@@ -1,16 +1,18 @@
-const axios = require("axios");
- 
-module.exports.config = { 
-  name: "En",
-	version: "0.0.2",
-	permission: 0,
-  prefix: false,
+module.exports.config = {
+	name: "en",
+	version: "1.0.1",
+	hasPermssion: 0,
 	credits: "BADOL-KHAN",
-	description: "Talk Sim",
-	category: "admin",
-	usages: "msg",
-    cooldowns: 5,
+  usePrefix: false,
+	description: "Text translation",
+	commandCategory: "media",
+	usages: "[en/ko/ja/vi] [Text]",
+	cooldowns: 5,
+	dependencies: {
+		"request":  ""
+	}
 };
+
 module.exports.run = async ({ api, event, args }) => {
 	const request = global.nodemodule["request"];
 	var content = args.join(" ");
@@ -34,4 +36,4 @@ module.exports.run = async ({ api, event, args }) => {
 		var fromLang = (retrieve[2] === retrieve[8][0][0]) ? retrieve[2] : retrieve[8][0][0]
 		api.sendMessage(`★ইংলিশ-কনভাট★\n\n╭•┄┅════❁𝙈𝘾𝙎•𝟬𝟬𝟳❁════┅┄•╮\n\n${text}\n\n╰•┄┅════❁𝙈𝘾𝙎•𝟬𝟬𝟳❁════┅┄•╯\n\n\n★𝐁𝐀𝐃𝐎𝐋-𝐁𝐎𝐓-𝟬𝟬𝟳★`, event.threadID, event.messageID);
 	});
-                                                                                           }
+}
