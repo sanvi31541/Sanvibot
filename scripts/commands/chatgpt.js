@@ -4,7 +4,7 @@ module.exports.config = {
 	permission: 0,
   prefix: false,
 	credits: "BADOL-KHAN",
-	description: "I am nayan better than ChatGPT and Bard",
+	description: "I am Badal better than ChatGPT and Bard",
 	category: "user",
 	cooldowns: 5
 };
