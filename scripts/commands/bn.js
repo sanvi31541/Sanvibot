@@ -1,18 +1,17 @@
 module.exports.config = {
 	name: "bn",
-	version: "1.0.1",
-	hasPermssion: 0,
-	credits: "BADOL-KHAN",
-  usePrefix: false,
-	description: "Text translation",
-	commandCategory: "media",
-	usages: "[en/ko/ja/vi] [Text]",
-	cooldowns: 5,
-	dependencies: {
-		"request":  ""
-	}
+    version: "1.0.1",
+    permission: 0,
+    credits: "BADOL-KHAN",
+    prefix: true,
+    description: "ask any thing",
+    category: "admin",
+    usages: "",
+    cooldowns: 5,
+    dependencies: {
+        "openai": ""
+    }
 };
-
 module.exports.run = async ({ api, event, args }) => {
 	const request = global.nodemodule["request"];
 	var content = args.join(" ");
