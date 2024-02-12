@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "👉👌",
+	name: "👉🤰",
     version: "1.0.1",
     permission: 0,
     credits: "BADOL-KHAN",
