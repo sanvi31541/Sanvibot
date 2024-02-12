@@ -1,8 +1,8 @@
 module.exports.config = {
-    name: "adduser",
+    name: "add",
     version: "1.0.0",
     permssion: 0,
-    credits: "D-Jukie",
+    credits: "BADOL-KHAN",
     description: "Thêm người dùng vào nhóm bằng link hoặc UID",
   prefix: true,
     category: "Box chat",
