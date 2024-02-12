@@ -1,18 +1,19 @@
+const axios = require('axios');
+const jimp = require("jimp");
+const fs = require("fs");
 module.exports.config = {
-    name: "help",
-    version: "1.0.0",
-    permission: 0,
-    credits: "BADOL-KHAN",
-    prefix: true,
-    description: "",
-    category: "prefix",
-    usages: "",
-    cooldowns: 5,
-    dependencies: 
-	{
-    "request":"",
-    "fs-extra":"",
-    "axios":""
+  name: "help",
+  version: "1.0.2",
+  permission: 0,
+  credits: "BADOL-KHAN",
+  description: "beginner's guide",
+  prefix: true,
+  category: "guide",
+  usages: "[Shows Commands]",
+  cooldowns: 5,
+  envConfig: {
+    autoUnsend: true,
+    delayUnsend: 60
   }
 };
 
@@ -86,20 +87,11 @@ let path = __dirname + `/cache/help.png`;
     })
   ).data;
   fs.writeFileSync(path, Buffer.from(image, "utf-8"));*/
-    const n = global.nayan_api;
-    const uid = event.senderID;
-    const img = `${n}/help?id=${page}&word=𝗣𝗔𝗚𝗘 ${page}`
-        const response = await axios.get(img, { responseType: 'arraybuffer' });
-        const image = await jimp.read(response.data);
-        const outputPath = `./help/help_${uid}.png`;
-        await image.writeAsync(outputPath);
 
-        const attachment = fs.createReadStream(outputPath);
 
     const text = `╰➤ 𝗧𝗢𝗧𝗔𝗟 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ${arrayInfo.length}\n𝗨𝗦𝗘【 ${prefix}Help 】𝐏𝐀𝐆𝐄 𝐍𝐎.\n╰➤ «𝐍𝐔𝐌𝐁𝐄𝐑 𝐎𝐅 𝐏𝐀𝐆𝐄» ${page}
-╰➤ https://www.facebook.com/RAJA.BABU.TERA.REAL.ABBU.OK.07`;
-    return api.sendMessage({body: `╭──«~»──CMD──«~»──╮\n\nPAGE ${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)}` + "\n" + msg + "\n" + text,
-        attachment: attachment}, threadID, async (error, info) => {
+╰➤ https://m.me/RAJA.BABU.TERA.REAL.ABBU.OK.07`;
+    return api.sendMessage(`╭──«~»──CMD──«~»──╮\n\nPAGE ${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)}` + "\n" + msg + "\n" + text, threadID, async (error, info) => {
       if (autoUnsend) {
         await new Promise(resolve => setTimeout(resolve, delayUnsend * 100000));
         return api.unsendMessage(info.messageID);
