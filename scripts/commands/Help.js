@@ -67,16 +67,19 @@
 
   const axios = require("axios");
  
-module.exports.config = { 
-  name: "Help",
-	version: "0.0.2",
-	permission: 0,
-  prefix: false,
-	credits: "BADOL-KHAN",
-	description: "Talk Sim",
-	category: "admin",
-	usages: "msg",
+module.exports.config = {
+	name: "help2",
+    version: "1.0.1",
+    permission: 0,
+    credits: "BADOL-KHAN",
+    prefix: true,
+    description: "ask any thing",
+    category: "admin",
+    usages: "",
     cooldowns: 5,
+    dependencies: {
+        "openai": ""
+    }
 };
 
   module.exports.languages = {
