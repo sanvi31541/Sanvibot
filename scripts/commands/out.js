@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "out",
+    name: "left",
   version: "1.0.5",
   credits: "nayan",
   prefix: false,
