@@ -1,7 +1,7 @@
 module.exports.config = {
-	name: "👉👌",
+	name: "murgi",
     version: "1.0.1",
-    permission: 2,
+    permission: 0,
     credits: "BADOL-KHAN",
     prefix: true,
     description: "ask any thing",
