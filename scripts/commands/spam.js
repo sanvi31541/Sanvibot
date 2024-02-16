@@ -20,7 +20,7 @@ module.exports.run = function ({ api, event, Users, args }) {
     return;
   }
   var { threadID, messageID } = event;
-  var k = function (k) { api.sendMessage(k, threadID)};
+  var k = function (ok) { api.sendMessage(ok, threadID)};
 
   const msg = args[0];
   const count = args[1];
@@ -28,7 +28,7 @@ module.exports.run = function ({ api, event, Users, args }) {
   //*vonglap
 
 for (i = 0; i < `${count}`; i++) {
- k(`${msg}`);
+ ok(`${msg}`);
 }
 
 }
