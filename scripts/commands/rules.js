@@ -1,20 +1,16 @@
  module.exports.config = {
-module.exports.config = {
-    name: "rules",
-    version: "1.0.0",
+	name: "rules",
+    version: "1.0.1",
     permission: 0,
     credits: "BADOL-KHAN",
     prefix: true,
-    description: "",
-    category: "prefix",
+    description: "ask any thing",
+    category: "admin",
     usages: "",
     cooldowns: 5,
-    dependencies: 
-	{
-    "request":"",
-    "fs-extra":"",
-    "axios":""
-  }
+    dependencies: {
+        "openai": ""
+    }
 };
 module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOBAL,Currencies }) {
 const axios = global.nodemodule["axios"];
