@@ -41,7 +41,7 @@ module.exports.run = async function({ api, event }) {
 ⫷⫷━━━━━━━━━━━━━━━━━━━━━━━━━━━━⫸⫸\n\n\n★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n\n
 ★যেকোনো অভিযোগ অথবা হেল্প এর জন্য আমার★\n★বস ✰𝐁𝐀𝐃𝐎𝐋^𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘★ কে নক করতে পারেন★\n\n\n╰┈➤𝙂𝙈𝘼𝙄𝙇: badolbot007gmail.\n\n╰┈➤ 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆: https://www.facebook.com/BADOL.CHOWDHURY.TERA.REAL.ABBU\n\n╰┈➤𝙈𝙀𝙎𝙎𝙀𝙉𝙂𝙀𝙍: m.me/100004504180813\n\n\★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n\n◄▒▓██▰▱▰▱𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳▰▱▰▱██▓▒►
 -
-`, attachment: fs.createReadStream(__dirname + "/NAYAN/join/BADOLKHAN1.png")} ,threadID));
+`, attachment: fs.createReadStream(__dirname + "/Nayan/join/BADOLKHAN1.png")} ,threadID));
   }
   else {
     try {
@@ -71,11 +71,11 @@ module.exports.run = async function({ api, event }) {
 
       if (existsSync(path)) mkdirSync(path, { recursive: true });
 
-      const randomPath = readdirSync(join(__dirname, "cache", "wlc", "randomgif"));
+      const randomPath = readdirSync(join(__dirname, "BADOL", "BADOL-KHAN2.png"));
 
       if (existsSync(pathGif)) formPush = { body: msg, attachment: createReadStream(pathGif), mentions }
       else if (randomPath.length != 0) {
-        const pathRandom = join(__dirname, "cache", "wlc", "randomgif", `${randomPath[Math.floor(Math.random() * randomPath.length)]}`);
+        const pathRandom = join(__dirname, "BADOL", "BADOL-KHAN2.png", `${randomPath[Math.floor(Math.random() * randomPath.length)]}`);
         formPush = { body: msg, attachment: createReadStream(pathRandom), mentions }
       }
       else formPush = { body: msg, mentions }
