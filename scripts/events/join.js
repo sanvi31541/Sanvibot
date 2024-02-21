@@ -2,7 +2,7 @@ module.exports.config = {
   name: "join",
   eventType: ['log:subscribe'],
   version: "1.0.0",
-  credits: "Mirai-Team", // FIXED BY YAN Nayan
+  credits: "Mcs-Team", // FIXED BY YAN BADOL
   description: "GROUP UPDATE NOTIFICATION"
 };
 
@@ -48,31 +48,21 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
-    let gifUrl = 'https://i.postimg.cc/SNQXkB0y/lv-0-20231018174834.gif';
-let gifPath = __dirname + '/Nayan/join/join.gif';
+    let gifUrl = 'https://i.imgur.com/eCpIjcl.jpeg';
+let gifPath = __dirname + '/Nayan/join/BADOL-KHAN2.png';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
-    return api.sendMessage("চলে এসেছি আমি পিচ্চি নয়ন তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
-<------------------------------>  
-BOT CONNECTED SUCCESFUL !!! 
-
-APPROVAL ALLOW IN THIS GROUP!!!
-<------------------------------>\n\nTO VIEW ANY COMMAND Use👉${global.config.PREFIX}help\nSee command👉 ${global.config.PREFIX}command
-\n\EXAMPLE:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
-<------------------------------>
-AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
-
-DEVELOPER :Mohammad Nayan 
-
-🟣Facebook Account Link: 
-
-https://www.facebook.com/www.xnxx.com169
-
-🔵WHATSAPP NUMBER: wa.me/+8801615298449
-
-🟢SUPPORT EMAIL: www.mdmnnm2004@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+    return api.sendMessage("•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\n★𝙈𝘾𝙎-𝙍𝙊𝘽𝙊𝙏-𝙄𝙎-𝘽𝙆★\n\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•", event.threadID, () => api.sendMessage({body:`★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n★আসসালামুআলাইকুম-কেমন-আছেন-সবাই★\n
+★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n\n
+◄▒▓██▰▱▰▱𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳▰▱▰▱██▓▒►\n\n
+★বট সংযুক্ত গ্রুপ চ্যাটে সফলভাবে যোগ করা হচ্ছে★\n
+★কিরে বাঁদর গুলা শয়তানি করার জন্য অ্যাড দিছস★
+⫷⫷━━━━━━━━━━━━━━━━━━━━━━━━━━━━⫸⫸\n\nযেকোনো কমান্ড দেখতে ${global.config.PREFIX}help ব্যবহার করুন\n
+\n\n╔═══════☆♡☆═══════╗\n\n╰┈➤উদাহারণ➤\n\n╰┈➤${global.config.PREFIX}inf ➤ \n╰┈➤${global.config.PREFIX}admin ➤ \n╰┈➤${global.config.PREFIX}owner ➤ \n╰┈➤${global.config.PREFIX}help ➤\n\n┗━━━━ ✦❘༻༺❘✦ ━━━━━┛
+⫷⫷━━━━━━━━━━━━━━━━━━━━━━━━━━━━⫸⫸\n\n\n★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n\n
+★যেকোনো অভিযোগ অথবা হেল্প এর জন্য আমার★\n★বস ✰𝐁𝐀𝐃𝐎𝐋^𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘★ কে নক করতে পারেন★\n\n\n╰┈➤𝙂𝙈𝘼𝙄𝙇: badolbot007gmail.\n\n╰┈➤ 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆: https://www.facebook.com/BADOL.CHOWDHURY.TERA.REAL.ABBU\n\n╰┈➤𝙈𝙀𝙎𝙎𝙀𝙉𝙂𝙀𝙍: m.me/100004504180813\n\n\★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n\n◄▒▓██▰▱▰▱𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳▰▱▰▱██▓▒►`, attachment: fs.createReadStream(gifPath)}, threadID));
 })
 .catch(error => {
     console.error(error);
@@ -182,4 +172,4 @@ https://www.facebook.com/www.xnxx.com169
       }
     } catch (e) { return console.log(e) };
   }
-  }
+}
