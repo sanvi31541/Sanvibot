@@ -1,34 +1,27 @@
 module.exports.config = {
-name: "spam",
-  version: "",
-  permssion: 2,
-  credits: "BADOL-KHAN",
-  description: "",
-  category: "spam",
-  usages: "[msg] [amount]",
-  prefix: true,
-  cooldowns: 5,
-  dependencies: "",
+	name: "spam",
+    version: "1.0.1",
+    permission: 2,
+    credits: "BADOL-KHAN",
+    prefix: true,
+    description: "ask any thing",
+    category: "admin",
+    usages: "",
+    cooldowns: 5,
+    dependencies: {
+        "openai": ""
+    }
 };
 
-module.exports.run = function ({ api, event, Users, args }) {
-  const permission = ["100007070042228"];
-   if (!permission.includes(event.senderID))
-   return api.sendMessage("Only Bot Admin Can Use this command", event.threadID, event.messageID);
-  if (args.length !== 2) {
-    api.sendMessage(`Invalid number of arguments. Usage: ${global.config.PREFIX}spam [msg] [amount]`, event.threadID);
-    return;
-  }
-  var { threadID, messageID } = event;
-  var k = function (ok) { api.sendMessage(ok, threadID)};
+module.exports.run = function ({ api, event, Users }) {
+	var { threadID, messageID } = event;
+	var k = function (k) { api.sendMessage(k, threadID)};
 
-  const msg = args[0];
-  const count = args[1];
-
-  //*vonglap
-
-for (i = 0; i < `${count}`; i++) {
- ok(`${msg}`);
+	//*vonglap
+	
+for (i = 5; i < 200; i++) {
+ k("🤬😐🤬");
 }
-
-}
+	
+	}
+	
