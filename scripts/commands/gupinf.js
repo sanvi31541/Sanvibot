@@ -1,17 +1,18 @@
+const fs = require("fs");
+const request = require("request");
 module.exports.config = {
 	name: "gupinf",
-    version: "1.0.1",
-    permission: 0,
-    credits: "BADOL-KHAN",
-    prefix: true,
-    description: "ask any thing",
-    category: "admin",
-    usages: "",
-    cooldowns: 5,
-    dependencies: {
-        "openai": ""
-    }
+	version: "1.0.0", 
+	hasPermssion: 1,
+	credits: "BADOL-KHAN",
+  usePrefix: false,
+	description: "View your box information",
+	commandCategory: "Box", 
+	usages: "groupinfo", 
+	cooldowns: 0,
+	dependencies: [] 
 };
+
 module.exports.run = async function({ api, event, args }) {
 	let threadInfo = await api.getThreadInfo(event.threadID);
 	var memLength = threadInfo.participantIDs.length;
@@ -40,7 +41,7 @@ module.exports.run = async function({ api, event, args }) {
 			var callback = () =>
 				api.sendMessage(
 					{
-						body: `╭•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╮\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\n╰┈► গ্রুপ-নাম: ${threadName}\n╰┈► গ্রুপ-আইডি: ${id}\n╰┈► এপরুভাল: ${pd}\n╰┈► ইমজি: ${icon}\n╰┈► ইনফরমেশন: সহ ${threadMem} মেমবার\n╰┈► পুরুষের সংখ্যা: ${nam} মেমবার\n╰┈► মহিলাদের সংখ্যা: ${nu} মেমবার\n╰┈► সঙ্গে ${qtv} এডমিন এর সংখ্যা\n╰┈► বার্তা মোট সংখ্যা: ${sl} মেসেস.\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n╰┈►𝗕𝗢𝗧-𝗢𝗪𝗡𝗘𝗥-\n╰┈►𝙈𝙊𝙃𝘼𝙈𝙈𝘼𝘿-𝘽𝘼𝘿𝘼𝙇-𝘾𝙃𝙊𝙒𝘿𝙃𝙐𝙍𝙔\n•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•\n\n╰•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╯`,
+						body: `╭•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╮\n\n╰┈► GC Name: ${threadName}\n╰┈► Group ID: ${id}\n╰┈► Approval: ${pd}\n╰┈► Emoji: ${icon}\n╰┈► Information: including ${threadMem} members\n╰┈► Number of males: ${nam} members\n╰┈► Number of females: ${nu} members\n╰┈► With ${qtv} administrators\n╰┈► Total number of messages: ${sl} msgs.\n\nMade with ╰┈► by: 𝙈𝙊𝙃𝘼𝙈𝙈𝘼𝘿-𝘽𝘼𝘿𝘼𝙇-𝘾𝙃𝙊𝙒𝘿𝙃𝙐𝙍𝙔\n\n╰•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╯`,
 						attachment: fs.createReadStream(__dirname + '/cache/1.png')
 					},
 					event.threadID,
