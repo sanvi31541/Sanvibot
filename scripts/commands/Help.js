@@ -1,19 +1,17 @@
 module.exports.config = {
-  name: "help3",
-  version: "1.0.2",
-  hasPermission: 0,
-  credits: "Mirai Team & Mod by Yan Maglinte",
-  description: "Beginner's Guide",
-  usePrefix: true,
-  commandCategory: "guide",
-  usages: "[Shows Commands]",
-  cooldowns: 5,
-  envConfig: {
-		autoUnsend: true,
-		delayUnsend: 60
-	}
+	name: "help3",
+    version: "1.0.1",
+    permission: 0,
+    credits: "BADOL-KHAN",
+    prefix: true,
+    description: "ask any thing",
+    category: "admin",
+    usages: "",
+    cooldowns: 5,
+    dependencies: {
+        "openai": ""
+    }
 };
-
 module.exports.languages = {
   en: {
     moduleInfo:
