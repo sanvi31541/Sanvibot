@@ -1,13 +1,15 @@
  module.exports.config = {
-	name: "rules",
-	version: "1.0.1", 
-	hasPermssion: 0,
-	credits: "BADOL-KHAN",
-  usePrefix: false,
-	description: "group and box ruls",
-	commandCategory: "rules",
-	cooldowns: 1,
-	dependencies: 
+module.exports.config = {
+    name: "rules",
+    version: "1.0.0",
+    permission: 0,
+    credits: "BADOL-KHAN",
+    prefix: true,
+    description: "",
+    category: "prefix",
+    usages: "",
+    cooldowns: 5,
+    dependencies: 
 	{
     "request":"",
     "fs-extra":"",
