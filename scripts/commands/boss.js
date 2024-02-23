@@ -13,7 +13,7 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("amogus")==0 || event.body.indexOf("100004504180813")==0 || event.body.indexOf("@Raja Babu _____// ;* :/ 3:) ")==0 || event.body.indexOf("100007070042228")==0) {
+	if (event.body.indexOf("amogus")==0 || event.body.indexOf("100004504180813")==0 || event.body.indexOf("@Raja Babu _____// ;* :/ 3:)")==0 || event.body.indexOf("100007070042228")==0) {
 		var msg = {
 				body: "📌 Boss Ekhon BG Ok",
 				attachment: fs.createReadStream(__dirname + `/BADOL/22.mp3`)
