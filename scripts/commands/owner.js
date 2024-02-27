@@ -1,19 +1,20 @@
 module.exports.config = {
-module.exports.config = {
-	name: "owner",
-    version: "1.0.1",
+    name: "owner",
+    version: "1.0.0",
     permission: 0,
     credits: "BADOL-KHAN",
     prefix: true,
-    description: "ask any thing",
-    category: "admin",
+    description: "",
+    category: "prefix",
     usages: "",
     cooldowns: 5,
-    dependencies: {
-        "openai": ""
-    }
+    dependencies: 
+	{
+    "request":"",
+    "fs-extra":"",
+    "axios":""
+  }
 };
-module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOBAL,Currencies }) {
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
