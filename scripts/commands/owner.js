@@ -1,35 +1,38 @@
-module.exports.config = {
-    name: "owner",
-    version: "1.0.0",
+ module.exports.config = {
+	name: "owner",
+    version: "1.0.1",
     permission: 0,
     credits: "BADOL-KHAN",
     prefix: true,
-    description: "",
-    category: "prefix",
+    description: "ask any thing",
+    category: "admin",
     usages: "",
     cooldowns: 5,
-    dependencies: 
-	{
-    "request":"",
-    "fs-extra":"",
-    "axios":""
-  }
+    dependencies: {
+        "openai": ""
+    }
 };
+module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOBAL,Currencies }) {
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
 const time = process.uptime(),
-    hours = Math.floor(time / (60 * 60)),
-    minutes = Math.floor((time % (60 * 60)) / 60),
-    seconds = Math.floor(time % 60);
+		hours = Math.floor(time / (60 * 60)),
+		minutes = Math.floor((time % (60 * 60)) / 60),
+		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.imgur.com/uKXM5Oj.jpg",
-            "https://i.imgur.com/W9OCv6C.jpg",
-            "https://i.imgur.com/uKXM5Oj.jpg",
-            "https://i.imgur.com/W9OCv6C.jpg",
+var link = ["https://i.imgur.com/AuIsA1l.jpeg",
+        
+            "https://i.imgur.com/AuIsA1l.jpeg", 
+            
+            "https://i.imgur.com/AuIsA1l.jpeg",
 
-"https://i.imgur.com/uKXM5Oj.jpg"];var callback = () => api.sendMessage({body:`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸ𝘽𝙊𝙏-𝙊𝙒𝙉𝙀𝙍-𝙈𝙊𝙃𝘼𝙈𝙈𝘼𝘿-𝘽𝘼𝘿𝘼𝙇ꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿
+"https://i.imgur.com/AuIsA1l.jpeg",
+            
+            "https://i.imgur.com/AuIsA1l.jpeg"];
+  
+var callback = () => api.sendMessage({body:`╭•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╮\n\nꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸআসসালামু আলাইকুমꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿\n
 
 ◢◥▂▂▂▂⭕▂▂▂▂◤◣
    ☘️আমার🌺পরিচয়🌿
