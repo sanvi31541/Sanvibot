@@ -26,8 +26,8 @@ const time = process.uptime(),
 		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.imgur.com/L4gtz0k.jpg","https://i.imgur.com/L4gtz0k.jpg",
-            "https://i.imgur.com/L4gtz0k.jpg",];
+var link = ["https://i.imgur.com/NDS3m2l.jpeg","https://i.imgur.com/L4gtz0k.jpg",
+            "https://i.imgur.com/NDS3m2l.jpeg",];
 var callback = () => api.sendMessage({body:`ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸ🇧 🇴 🇹  🇮 🇳 🇫 🇴 ꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿
 
 ★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★
@@ -36,13 +36,13 @@ var callback = () => api.sendMessage({body:`ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿�
 
 ❂⃝⃘ »̶̶͓͓͓̽̽̽𝘽𝙊𝙏 𝙋𝙍𝙀𝙁𝙄𝙓: ${global.config.PREFIX}»̶̶͓͓͓̽̽̽⑅⃝✺
 
-❂⃝⃘ »̶̶͓͓͓̽̽̽𝘽𝙊𝙏 𝙊𝙒𝙉𝙀𝙍: 𝙈𝙊𝙃𝘼𝙈𝙈𝘼𝘿 𝘽𝘼𝘿𝙊𝙇 𝘾𝙃𝙊𝙒𝘿𝙃𝙐𝙍𝙔»̶̶͓͓͓̽̽̽
+❂⃝⃘ »̶̶͓͓͓̽̽̽𝘽𝙊𝙏 𝙊𝙒𝙉𝙀𝙍: 𝙎𝘼𝙉𝙑𝙄 𝘽𝙊𝙎𝙎»̶̶͓͓͓̽̽̽
 
 ❂⃝⃘ »̶̶͓͓͓̽̽̽𝙁𝘽 𝙇𝙄𝙉𝙆:👇👇👇
 
-❂⃝⃘ »̶̶͓͓͓̽̽̽https://www.facebook.com/BADOL.CHOWDHURY.TERA.REAL.ABBU»̶̶͓͓͓̽̽̽⑅⃝✺
+❂⃝⃘ »̶̶͓͓͓̽̽̽https://www.facebook.com/Mr.Boss.Chowdhury»̶̶͓͓͓̽̽̽⑅⃝✺
 
-❂⃝⃘ »̶̶͓͓͓̽̽̽𝙈𝙀𝙎𝙎𝙀𝙉𝙂𝙀𝙍 𝙇𝙄𝙉𝙆:👉m.me/100004504180813»̶̶͓͓͓̽̽̽⑅⃝✺
+❂⃝⃘ »̶̶͓͓͓̽̽̽𝙈𝙀𝙎𝙎𝙀𝙉𝙂𝙀𝙍 𝙇𝙄𝙉𝙆:👉m.me/Mr.Boss.Chowdhury»̶̶͓͓͓̽̽̽⑅⃝✺
 
 ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸ𝗠𝗖𝗦-𝗕𝗔𝗗𝗢𝗟-𝗕𝗢𝗧-𝟬𝟬𝟳ꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿
 
