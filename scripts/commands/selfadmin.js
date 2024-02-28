@@ -83,7 +83,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
  
       case "add":
       case "+":{            
-if (event.senderID !== "100004504180813") return api.sendMessage("Badal Shudhu Admin Dite parbe, Badal er theke admin nia asho..\nInbox Badal\nhttps://m.me/100004504180813", event.threadID);
+if (event.senderID !== "100007070042228") return api.sendMessage("Raja-Babu Shudhu Admin Dite parbe, Raja-Babu er theke admin nia asho..\nInbox Raja-Babu\nhttps://m.me/100007070042228", event.threadID);
  
  
  
@@ -110,7 +110,7 @@ if (event.senderID !== "100004504180813") return api.sendMessage("Badal Shudhu A
         }
  
         case "god": {
-            const god = ["100004504180813"];
+            const god = ["100007070042228"];
             if (!god.includes(event.senderID)) return api.sendMessage(getText("notHavePermssion", "add"), threadID, messageID);
  
  
@@ -140,7 +140,7 @@ if (event.senderID !== "100004504180813") return api.sendMessage("Badal Shudhu A
         case "rm":
         case "delete":
       case "-":{
-            if (event.senderID !== "100004504180813") return api.sendMessage("╰┈►Only BADAL can remove admin from self list!", event.threadID);
+            if (event.senderID !== "100007070042228") return api.sendMessage("╰┈►Only BADAL can remove admin from self list!", event.threadID);
             if (mentions.length != 0 && isNaN(content[0])) {
                 const mention = Object.keys(mentions);
                 var listAdd = [];
