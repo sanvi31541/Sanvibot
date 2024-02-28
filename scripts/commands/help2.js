@@ -1,16 +1,20 @@
+const axios = require('axios');
+const jimp = require("jimp");
+const fs = require("fs");
 module.exports.config = {
-	name: "helpall",
-    version: "1.0.1",
-    permission: 0,
-    credits: "BADOL-KHAN",
-    prefix: true,
-    description: "ask any thing",
-    category: "admin",
-    usages: "",
-    cooldowns: 5,
-    dependencies: {
-        "openai": ""
-    }
+  name: "help2",
+  version: "1.0.2",
+  permission: 0,
+  credits: "BADOL-KHAN",
+  description: "beginner's guide",
+  prefix: true,
+  category: "guide",
+  usages: "[Shows Commands]",
+  cooldowns: 5,
+  envConfig: {
+    autoUnsend: true,
+    delayUnsend: 60
+  }
 };
 
 module.exports.languages = {
