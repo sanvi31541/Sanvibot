@@ -3,7 +3,7 @@ module.exports.config = {
   name: "iloveu",
   version: "2.0.0",
   permission: 0,
-  credits: "nayan",
+  credits: "BADOL-KHAN",
   description: "",
   prefix: false,
   category: "user",
@@ -15,7 +15,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("I love you")==0 || (event.body.indexOf("i love you")==0 || (event.body.indexOf("I love u")==0 || (event.body.indexOf("I love you")==0)))) {
 		var msg = {
-				body: "Hmm... বস নয়নও তোমাকে ভালোবাসে😇😻 :))"
+				body: "Hmm🤟... বস রা্ঁজা্ঁ বা্ঁবু্ঁও তোমাকে ভালোবাসে😇😻 :))"
     }
 			api.sendMessage(msg, threadID, messageID);
 		}
