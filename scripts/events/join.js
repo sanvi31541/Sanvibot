@@ -36,8 +36,8 @@ module.exports.run = async function({ api, event, Users }) {
   if (thu == "Thursday") thu = 'Thursday'
   if (thu == 'Friday') thu = 'Friday'
   if (thu == 'Saturday') thu = 'Saturday'
-  const time = moment.tz("Asia/dhaka").format("HH:mm:ss - DD/MM/YYYY");
-  const hours = moment.tz("Asia/dhaka").format("HH");
+  const time = moment.tz("Asia/dhaka").format("hh:mm:ss - DD/MM/YYYY");
+  const hours = moment.tz("Asia/dhaka").format("hh");
   const { commands } = global.client;
   const { threadID } = event;
   let threadInfo = await api.getThreadInfo(event.threadID);
