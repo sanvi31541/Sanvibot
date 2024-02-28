@@ -1,8 +1,8 @@
 module.exports.config = {
-	name: "say",
+	name: "x",
 	version: "1.0.2",
 	permission: 0,
-	credits: "nayan",
+	credits: "BADOL-KHAN",
 	prefix: true,
 	description: "check the amount of yourself or the person tagged",
 	category: "without prefix",
